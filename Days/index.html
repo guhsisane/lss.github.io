@@ -11,16 +11,31 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>记录我们的日常</title>
+     <audio src="img/杜航 - 红色高跟鞋.mp3" preload="meta" loop autoplay id="bgmusic"></audio>
+<script>
+		var bgmusic = document.getElementById('bgmusic');
+		bgmusic.addEventListener('canplay', function(){
+			this.play();
+		}, false);
+		window.addEventListener('load', function(){
+			window.addEventListener('touchstart', once, false);
+		}, false);
+		function once(){
+			bgmusic.play();
+			window.removeEventListener('touchstart', once, false);
+		}
+</script>
 </head>
 <body>
 		
-<a class="navbar-brand page-scroll" href="../index.html">
-<div class="img-logo"><img  style="width:auto; height:70px" src="../images/logo.png"/></div>
-</a>
+
             
 	<section class="cd-section">
     		<div class="cd-block">
-			<h1>我们的以日常</h1>
+			<h1>我们的日常</h1>
+            <a class="navbar-brand page-scroll" href="../index.html">
+<div class="img-logo"><img  style="width:auto; height:40px" src="../images/logo.png"/></div>
+</a>
 		</div>
 	</section> <!-- .cd-section -->
 
@@ -46,7 +61,32 @@
 				</p>
 			</div>
 		</div>
+	</section> 
+    <!-- .cd-section -->
+    
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<p>
+					All my life.I just want to spend there days with you.yesterday, today and tomorrow...
+				</p>
+			</div>
+		</div>
 	</section> <!-- .cd-section -->
+
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<p>
+					“我爱你就算你满嘴谎言，仍有我痴心不变啊！”
+				</p>
+			</div>
+		</div>
+	</section> 
 
 	<section class="cd-section">
 		<div class="cd-block">

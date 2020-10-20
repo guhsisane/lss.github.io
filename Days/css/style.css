@@ -17,7 +17,7 @@ body {
   font-size: 1.6rem;
   font-family: "Slabo 27px", serif;
   color: #ffffff;
-  background-image:url(../../images/bg.jpg);
+  background-color:#6FF;
   background-repeat:repeat-x;
 }
 body::before {
@@ -64,6 +64,7 @@ Main Components
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-size: 2.6rem;
+  
 }
 @media only screen and (min-width: 768px) {
   .cd-section h1 {
@@ -147,6 +148,14 @@ Main Components
 }
 .cd-section:nth-of-type(4) .cd-half-block:first-of-type {
   background-image: url("../img/img-3.jpg");
+  background-size: cover;
+}
+.cd-section:nth-of-type(5) .cd-half-block:first-of-type {
+  background-image: url("../img/img-4.jpg");
+  background-size: cover;
+}
+.cd-section:nth-of-type(6) .cd-half-block:first-of-type {
+  background-image: url("../img/img-5.jpg");
   background-size: cover;
 }
 @media only screen and (min-width: 1170px) {
